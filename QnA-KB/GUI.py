@@ -176,16 +176,27 @@ class ChatInterface(Frame):
     
     def send_message_insert(self, message):
 		# strMsg = message	
+        self.text_box.tag_config('red', foreground='#ff0000')
         user_input = self.entry_field.get()
         print(user_input)
-        pr1 = "Human : " + user_input + "\n"
+        pr0 = "Human : "+ time.strftime('%B %d, %Y' + ' at ' + '%I:%M %p') + "\n"
+        self.text_box.configure(state=NORMAL)
+        self.text_box.insert(END, pr0, "red")
+        self.text_box.configure(state=DISABLED)
+        self.text_box.see(END)
+        pr1 = user_input + "\n"
         self.text_box.configure(state=NORMAL)
         self.text_box.insert(END, pr1)
         self.text_box.configure(state=DISABLED)
         self.text_box.see(END)
         text2 = handler.chat_main(user_input) + '\n '
         print(text2)
-        strMsg2 = 'Aarogya Bot: ' + text2 + '\n'
+        strMsg2 = text2
+        pr3 = "Aarogya Bot:  : "+ time.strftime('%B %d, %Y' + ' at ' + '%I:%M %p') + "\n"
+        self.text_box.configure(state=NORMAL)
+        self.text_box.insert(END, pr3, "red")
+        self.text_box.configure(state=DISABLED)
+        self.text_box.see(END)
         self.text_box.configure(state=NORMAL)
         self.text_box.insert(END, strMsg2)
         self.text_box.configure(state=DISABLED)
