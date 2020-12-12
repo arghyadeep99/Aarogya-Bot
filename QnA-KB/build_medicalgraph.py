@@ -32,7 +32,7 @@ class MedicalGraph:
 			disease_dict['prevent'] = ''
 			disease_dict['cause'] = ''
 			disease_dict['symptom'] = ''
-			disease_dict['acompany'] = ''           
+			disease_dict['accompany'] = ''           
 			disease_dict['cure_department'] = ''
 			disease_dict['cure_way'] = ''
 
@@ -43,7 +43,7 @@ class MedicalGraph:
 
 			accompany_temp = row['accompany'].replace('[','').replace(']','').replace("'",'').split(",")
 			for accompany in accompany_temp:
-				rels_acompany.append([disease, accompany])
+				rels_accompany.append([disease, accompany])
 
 			disease_dict['desc'] = row['desc']
 
@@ -67,7 +67,7 @@ class MedicalGraph:
 
 			disease_infos.append(disease_dict)
 		return set(departments), set(symptoms), set(diseases), disease_infos,\
-			   rels_department, rels_symptom, rels_acompany, rels_category
+			   rels_department, rels_symptom, rels_accompany, rels_category
 
 	def create_node(self, label, nodes):
 		count = 0
