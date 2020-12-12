@@ -14,7 +14,7 @@ class ChatBotGraph:
 		self.searcher = AnswerSearcher()
 
 	def chat_main(self, sent):
-		answer = "Hello, I am Aarogya Bot. How can I hope I can help you?"
+		answer = "Hello, I am Aarogya Bot. How can I help you?"
 		res_classify = self.classifier.classify(sent)
 		#print(res_classify)
 		if not res_classify:
