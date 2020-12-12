@@ -1,1 +1,4 @@
 venv/
+.ipynb_checkpoints
+__pycache__
+**/GoogleNews-vectors-negative300.bin.gz
