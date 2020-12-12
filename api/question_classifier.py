@@ -17,7 +17,7 @@ class QuestionClassifier:
 		self.wdtype_dict = self.build_wdtype_dict()
 		self.symptom_qwds = ['symptom', 'characterization', 'phenomenon']
 		self.cause_qwds = ['reason','cause']
-		self.acompany_qwds = ['complication', 'concurrent', 'occur','happen together', 'occur together', 'appear together', 'together', 'accompany', 'follow', 'coexist']
+		self.accompany_qwds = ['complication', 'concurrent', 'occur','happen together', 'occur together', 'appear together', 'together', 'accompany', 'follow', 'coexist']
 		self.prevent_qwds = ['prevention', 'prevent', 'resist', 'guard', 'against','escape','avoid',
 							 'how can I not', 
 							 'how not to', 'why not', 'how to prevent']
@@ -58,8 +58,8 @@ class QuestionClassifier:
 			question_type = 'disease_cause'
 			question_types.append(question_type)
 
-		if self.check_words(self.acompany_qwds, question2) and ('disease' in types):
-			question_type = 'disease_acompany'
+		if self.check_words(self.accompany_qwds, question2) and ('disease' in types):
+			question_type = 'disease_accompany'
 			question_types.append(question_type)
 
 		if self.check_words(self.prevent_qwds, question2) and 'disease' in types:
