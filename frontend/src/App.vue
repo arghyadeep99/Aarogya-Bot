@@ -5,6 +5,8 @@
       :messages="messages"
       :options="botOptions"
       :bot-typing="botTyping"
+      :input-disable="botTyping"
+      @init="botStart"
       @msg-send="messageSendHandler"
     />
   </div>
@@ -29,6 +31,22 @@ export default {
     };
   },
   methods: {
+    botStart() {
+      // Fake typing for the first message
+      this.botTyping = true;
+      axios.get("http://localhost:5000/?search=hello").then((res) => {
+        console.log(res);
+
+        this.messages.push({
+          agent: "bot",
+          type: "text",
+          text: res.data.message,
+        });
+
+        this.botTyping = false;
+      });
+    },
+
     messageSendHandler(value) {
       this.messages.push({
         agent: "user",
@@ -55,4 +73,8 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 </style>
