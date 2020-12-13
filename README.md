@@ -93,6 +93,9 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 * Install and run neo4j with instructions as mentioned [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-neo4j-on-ubuntu-20-04).
 
 ### Frontend and Backend
+#### Neo4j
+* Confirm that neo4j is running: `sudo service neo4j start`
+
 #### API
 * cd into `api/` folder and run   
 	-`python3 build_medicalgraph.py`
@@ -101,12 +104,6 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 
 #### Frontend
 * cd into `frontend/` folder and run `yarn serve`
-
-### Desktop GUI
-* cd into **QnA-KB** folder and run:
-  -`python3 build_medicalgraph.py`
-* Let the knowledge base build. Once complete, run `python3 GUI.py`. 
-
 
 
 #### This project still has scope of development, so you can also contribute to this Project as follows:
