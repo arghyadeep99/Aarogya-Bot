@@ -90,7 +90,19 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 * [Fork](https://github.com/arghyadeep99/Aarogya-Bot) this Repository.
 * cd into the directory in the terminal and run as:
   -`pip install -r requirements.txt`
-* Install neo4j with instructions as mentioned [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-neo4j-on-ubuntu-20-04).
+* Install and run neo4j with instructions as mentioned [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-neo4j-on-ubuntu-20-04).
+
+### Frontend and Backend
+#### API
+* cd into `api/` folder and run   
+	-`python3 build_medicalgraph.py`
+* Run `export FLASK_APP=main.py`
+* Run `flask run`
+
+#### Frontend
+* cd into `frontend/` folder and run `yarn serve`
+
+### Desktop GUI
 * cd into **QnA-KB** folder and run:
   -`python3 build_medicalgraph.py`
 * Let the knowledge base build. Once complete, run `python3 GUI.py`. 
