@@ -39,8 +39,8 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 * [x] To understand user query, we make use of **Aho-Corasick** algorithm, to identify the patterns of type of question asked and fetch suitable results. 
 * [x] Our Neo4j database is queried, and the  appropriate result is returned to the user.   
 * [x] In case a question isn't found in our knowledge graph, we make use of question-answer pairs derived from [https://questiondoctors.com](https://questiondoctors.com) and use Question Similarity to see most probable question that matches the user query and return the answer correpsonding to that question.
-* [x] For Question Similarity, we initially tried Bidirectional LSTM + Attention model, but we were having problems trying to use it as a predictor function. So, we now use Siamese-LSTM to make our predictions for most probable question. Datasetused was Quora-Question-Similarity, hosted on [Kaggle](https://www.kaggle.com/c/quora-question-pairs/data).
-* [x] The result fetched through question-similarity method may not aalways be most apt, since a completely unrelated question, still may match with some queries from our dataset, based on similarity score. We look forward to improve this segment of our chatbot in future.
+* [x] For Question Similarity, we initially tried Bidirectional LSTM + Attention model, but we were having problems trying to use it as a predictor function. So, we now use Siamese-LSTM to make our predictions for most probable question. Dataset used was Quora-Question-Similarity, hosted on [Kaggle](https://www.kaggle.com/c/quora-question-pairs/data).
+* [x] The result fetched through question-similarity method may not always be most apt, since a completely unrelated question, still may match with some queries from our dataset, based on similarity score. We look forward to improve this segment of our chatbot in future.
 
 
 ---
@@ -49,20 +49,20 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 
 <div align="center">
 <h4 align="center">Initial Greeting</h4>
-<img src="./screenshots/ss1.jpeg" width=900px/>
+<img src="./screenshots/ss1.png" width=900px/>
 <br>
 </div>
 
 
 <div align="center">
-<h4 align="center">Invoking Knowledge Base from Neo4j</h4>
-<img src="./screenshots/ss2.jpeg" width=900px/>
+<h4 align="center">Invoking Results from Knowledge Graph Base in Neo4j</h4>
+<img src="./screenshots/ss2.png" width=900px/>
 <br>
 </div>
 
 <div align="center">
 <h4 align="center">Invoking Siamese LSTM Model</h4>
-<img src="./screenshots/ss3.jpeg" width=900px/>
+<img src="./screenshots/ss3.png" width=900px/>
 <br>
 </div>
 ---
