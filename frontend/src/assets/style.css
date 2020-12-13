@@ -1,5 +1,6 @@
 body {
   background-color: #000000;
+  color: white;
   min-height: 100vh;
 }
 
@@ -12,14 +13,13 @@ body {
     width: fit-content;
     color: #c0c0c0;
 }
-.grid .main p{
+.grid .main .subtitle{
     margin-top: 0.8em;
     font-size: 1.2em;
     width: fit-content;
     color: #bc6ff1;
     font-weight: bold;
 }
-
 .underlines{
     position: relative;
     top: 0;

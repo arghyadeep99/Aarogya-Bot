@@ -36,19 +36,11 @@ export default {
     };
   },
   mounted() {
-    // Fake typing for the first message
-    this.botTyping = true;
-    axios.get("http://localhost:5000/?search=hello").then((res) => {
-      console.log(res);
-
       this.messages.push({
         agent: "bot",
         type: "text",
-        text: res.data.message,
+        text: "Hello! I'm Aarogya Bot. How can I help you?",
       });
-
-      this.botTyping = false;
-    });
   },
   methods: {
     messageSendHandler(value) {
