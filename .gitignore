@@ -1,0 +1,6 @@
+venv/
+.ipynb_checkpoints
+__pycache__
+**/GoogleNews-vectors-negative300.bin.gz
+**/question_pairs_weights_type1_final.h5
+aarogya-env/
