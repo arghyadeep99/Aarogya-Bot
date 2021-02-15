@@ -22,6 +22,8 @@
 
 <b>Submission for HackOff-3.0.</b> 
 
+<b> UPDATE: This project won the first prize for the given problem statement by Siemens Healthineers in HackOff-3.0!</b>
+
 <h2>About:</h2>
 
 Aarogya Bot is an AI-driven chatbot that will help you answer your basic medical queries, amidst the Covid-19 pandemic, where moving out to consult a doctor isn't a luxury anymore. The chatbot can respond to your medical queries only to the best of its **knowledge graph base**, so be mindful of that and always cross check the responses of Aarogya Bot with a medical professional!
