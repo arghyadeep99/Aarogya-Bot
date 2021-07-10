@@ -22,7 +22,7 @@
 
 <b>Submission for HackOff-3.0.</b> 
 
-<b> UPDATE: This project won the first prize for the given problem statement by Siemens Healthineers in HackOff-3.0!</b>
+<b> UPDATE: This project won the first prize for the given problem statement by Siemens Healthineers in HackOff-3.0! An article on our journey to make this chatbot is published in Towards Data Science <a href="https://towardsdatascience.com/aarogya-bot-the-ai-driven-chatbot-to-answer-your-medical-queries-4a76daf80fc4">here</a>! </b>
 
 <h2>About:</h2>
 
