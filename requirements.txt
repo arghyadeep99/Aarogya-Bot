@@ -28,7 +28,7 @@ Pygments==2.15.0
 python-dateutil==2.8.2
 pytz==2023.3
 six==1.16.0
-tensorboard==1.12.2
+tensorboard==2.12.2
 tensorflow @ https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl
 termcolor==2.2.0
 tzdata==2023.3
